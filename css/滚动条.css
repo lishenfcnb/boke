@@ -1,0 +1,18 @@
+.box {
+    transition: transform 0.5s ease, opacity 0.5s linear;
+}
+
+.box:nth-child(even) {
+    transform: translateX(200%);
+    opacity: 0;
+}
+
+.box:nth-child(odd) {
+    transform: translateX(-200%);
+    opacity: 0;
+}
+
+.box.show-center {
+    transform: translateX(0);
+    opacity: 1;
+}
